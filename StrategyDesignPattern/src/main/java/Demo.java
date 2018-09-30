@@ -5,7 +5,7 @@ public class Demo {
     }
 
     public static void main(String[] args) {
-        Context context = new Context();
+        Context context = new Context(new BubbleSortStrategy());
         Demo demo = new Demo(context);
         demo.execute();
     }
