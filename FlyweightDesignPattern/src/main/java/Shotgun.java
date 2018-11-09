@@ -9,4 +9,18 @@ public class Shotgun extends Gun {
             System.out.println(this.bullets[i].toString());
         }
     }
+
+    @Override
+    public void loadBullets() {
+        for (int i = 0; i < this.bullets.length; i++) {
+            bullets[i] = BulletFactory.getBulletByType(this.bulletType);
+        }
+    }
+
+    @Override
+    public void loadUncachedBullets() {
+        for (int i = 0; i < this.bullets.length; i++) {
+            bullets[i] = BulletFactory.getBulletFromCache(this.bulletType);
+        }
+    }
 }

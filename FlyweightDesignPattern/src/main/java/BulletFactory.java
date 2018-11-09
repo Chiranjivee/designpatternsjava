@@ -4,7 +4,8 @@ import java.util.Map;
 public class BulletFactory {
     private static Map<BulletType, Bullet> bulletCache = new HashMap<>();
 
-    public static Bullet getBulletByType(BulletType type) {
+    public static Bullet getBulletByType(BulletType type) throws IllegalArgumentException
+    {
         switch(type) {
             case PISTOL_BULLET:
                 return new Bullet("S", "50mg");
@@ -13,13 +14,13 @@ public class BulletFactory {
             case SNIPER_BULLET:
                 return new Bullet("L", "100mg");
             default:
-                throw new IllegalAccessException("Invalid bullet type");
+                throw new IllegalArgumentException("Invalid bullet type");
         }
     }
 
     public static Bullet getBulletFromCache(BulletType type) {
         if (bulletCache.containsKey(type)) {
-            return bulletCaqche.get(type);
+            return bulletCache.get(type);
         }
 
         Bullet bullet = getBulletByType(type);

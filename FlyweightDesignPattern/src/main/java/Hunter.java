@@ -5,7 +5,7 @@ public class Hunter {
         shotGun.loadBullets();
         shotGun.shoot();
 
-        System.out.println("Shooting with uncached bullets");
+        System.out.println("Shooting with un-cached bullets");
         Gun shotgunUncached = new Shotgun(8, BulletType.SHOTGUN_BULLET);
         shotgunUncached.loadUncachedBullets();
         shotgunUncached.shoot();
