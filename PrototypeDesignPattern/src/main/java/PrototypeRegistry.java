@@ -1,7 +1,10 @@
-public class PrototypeRegistory {
-    private Map<String, Protype> prototypeRegistry;
+import java.util.HashMap;
+import java.util.Map;
 
-    public PrototypeRegistory() {
+public class PrototypeRegistry {
+    private Map<String, Prototype> prototypeRegistry;
+
+    public PrototypeRegistry() {
         this.prototypeRegistry = new HashMap<>();
     }
 
@@ -10,6 +13,6 @@ public class PrototypeRegistory {
     }
 
     public Prototype getPrototypeCloneFromPrototypeRegistory(String name) {
-        this.prototypeRegistry.get(name).clone();
+        return this.prototypeRegistry.get(name).clone();
     }
 }

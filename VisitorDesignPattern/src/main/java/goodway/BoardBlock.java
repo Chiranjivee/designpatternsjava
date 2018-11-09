@@ -1,4 +1,4 @@
-package badway;
+package goodway;
 
 public class BoardBlock extends ChessComponent {
 
@@ -29,4 +29,9 @@ public class BoardBlock extends ChessComponent {
                 " and a piece with name: " + this.getPiece().getComponentName()
                 + " and color: " + this.getPiece().getColor());
     }
+    @Override
+    void accept(Visitor v) {
+        v.visitBlock(this);
+    }
+
 }

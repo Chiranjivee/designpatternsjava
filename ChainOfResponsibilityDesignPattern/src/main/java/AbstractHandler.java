@@ -1,7 +1,7 @@
 public abstract class AbstractHandler implements Handler {
-    protected Handler handler;
+    protected Handler nextHandler;
 
     public void setNextHandler(Handler handler) {
-        this.handler = handler;
+        this.nextHandler = handler;
     }
 }

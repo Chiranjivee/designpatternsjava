@@ -8,6 +8,6 @@ public class PoliceVehicleHandler extends AbstractHandler {
             System.out.println("Give access.");
             return;
         }
-        this.nextHandler.handle();
+        this.nextHandler.handle(incomingSuspect);
     }
 }

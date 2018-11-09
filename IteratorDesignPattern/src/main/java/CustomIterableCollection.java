@@ -5,7 +5,7 @@ public class CustomIterableCollection implements IterableCollection {
     private List<String> internalList = new ArrayList<>();
 
     public Iterator createIterator() {
-        return new CustomIterableCollectionIterator();
+        return new CustomIterableCollectionIterator(this);
     }
 
     public CustomIterableCollection() {
@@ -14,7 +14,7 @@ public class CustomIterableCollection implements IterableCollection {
         internalList.add("binary.");
     }
     public int size() {
-        this.internalList.size();
+        return this.internalList.size();
     }
 
     public String getStringAtIndex(int i) {

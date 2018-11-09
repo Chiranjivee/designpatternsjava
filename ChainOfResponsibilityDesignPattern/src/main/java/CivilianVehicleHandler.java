@@ -9,6 +9,6 @@ public class CivilianVehicleHandler extends AbstractHandler {
             System.out.println("Minor interrogation.");
             return;
         }
-        this.nextHandler.handle();
+        this.nextHandler.handle(incomingSuspect);
     }
 }

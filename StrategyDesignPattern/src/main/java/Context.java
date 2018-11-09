@@ -10,6 +10,6 @@ public class Context {
     }
 
     public String doSomething() {
-        this.myStrategy.execute();
+        return this.myStrategy.execute();
     }
 }

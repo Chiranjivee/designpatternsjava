@@ -1,5 +1,5 @@
 public class WinnieThePenguin implements PlasticToyBird {
-    public void speak() {
+    public void squeak() {
         System.out.println("Squeaking.");
     }
 }

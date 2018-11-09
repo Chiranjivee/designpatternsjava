@@ -8,6 +8,6 @@ public class AmbulanceHandler extends AbstractHandler {
             System.out.println("Let go.");
             return;
         }
-        this.nextHandler.handle();
+        this.nextHandler.handle(incomingSuspect);
     }
 }

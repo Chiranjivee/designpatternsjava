@@ -13,6 +13,7 @@ public class Robot {
     }
 
     public void setArms(String arms) {
+        System.out.println("Setting arms");
         this.arms = arms;
     }
     
@@ -21,6 +22,7 @@ public class Robot {
     }
 
     public void setLegs(String legs) {
+        System.out.println("Setting legs");
         this.legs = legs;
     }
 
@@ -29,6 +31,7 @@ public class Robot {
     }
 
     public void setHead(String head) {
+        System.out.println("Setting head");
         this.head = head;
     }
 
@@ -37,6 +40,7 @@ public class Robot {
     }
 
     public void setDoors(String doors) {
+        System.out.println("Setting doors");
         this.doors = doors;
     }
 
@@ -61,6 +65,7 @@ public class Robot {
     }
 
     public void setFireArms(String fireArms) {
+        System.out.println("Setting fire-arms");
         this.fireArms = fireArms;
     }
 }

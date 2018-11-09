@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         ConcretePrototype prototype = new ConcretePrototype("Test name");
 
-        PrototypeRegistory registory = new PrototypeRegistory();
+        PrototypeRegistry registory = new PrototypeRegistry();
 
         registory.addPrototypeToRegistory("Original", prototype);
 

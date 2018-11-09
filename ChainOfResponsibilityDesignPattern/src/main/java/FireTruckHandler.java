@@ -6,6 +6,6 @@ public class FireTruckHandler extends AbstractHandler {
             System.out.println("Validate id.");
             return;
         }
-        this.nextHandler.handle();
+        this.nextHandler.handle(incomingSuspect);
     }
 }

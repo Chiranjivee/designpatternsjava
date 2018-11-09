@@ -15,6 +15,6 @@ public class ConcretePrototype implements Prototype {
 
     @Override
     public Prototype clone() {
-        return new ConcrtePrototype(this);
+        return new ConcretePrototype(this);
     }
 }
